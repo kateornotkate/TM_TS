@@ -12,7 +12,7 @@ public class Main {
         celebrities.add(new Person("Антонио", "Хосе Домингес Бандерас", 62));
         celebrities.add(new Person("Пенелопа", "Крус Санчес", 48));
 
-        Comparator<Person> comparator = (Person o1, Person o2) -> {
+        Comparator<Person> comparator = (o1, o2) -> {
             int p1 = o1.getSurname().split("[\\s-]+").length;
             int p2 = o2.getSurname().split("[\\s-]+").length;
             if (p1 > p2) {
